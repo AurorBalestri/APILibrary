@@ -2,8 +2,25 @@
 {
     public class Book
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
+        private string _author;
+        private string _title;
+        private int _id;
+
+        public string Author { get { return _author; } set { _author = value; } }
+        public string Title { get { return _title; } set { _title = value; } }
+
+        public int Id { get { return _id; } set { _id = value; } }
+
+
+        public Book()
+        {
+
+        }
+        public Book(string autore, string title, int barcode)
+        {
+            Author = autore;
+            Title = title;
+            Id = id;
+        }
     }
 }
