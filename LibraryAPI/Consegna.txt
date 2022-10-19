@@ -1,0 +1,120 @@
+﻿ercizio Biblioteca: 
+
+Modelli 
+
+Libro 
+
+Cliente 
+
+Prestito 
+
+Funzionalità: 
+
+CRUD 
+
+Create 
+
+GetAll (Read) 
+
+GetDetail (Read) GetById <--- ci deve essere un identificativo univoco 
+
+Update 
+
+Delete 
+
+CRUD di Libro 
+
+CRUD di Cliente 
+
+CRUD di Prestito 
+
+Modificare date prestito <--- uguale o differente da PUT su /prestiti/{id} ? 
+
+Vorrei assegnare un premio al libro piu prestato in un arco specifico di tempo 
+
+Un premio può essere assegnato solo a un libro 
+
+Un premio deve essere assegnato a un libro rispetto allo span temporale dei suoi prestiti 
+
+Un premio non può essere assegnato relativamente a uno span temporale di un altro premio	 
+
+Letture 
+
+GetByFilter (risorsa a scelta) <--- I filtri possibili sono I campi presenti nel modello della GetAll 
+
+Vorrei estrarre una classifica (lista ordinata) dei clienti secondo numero dei libri presi in prestito 
+
+Vorrei estrarre una lista dei prestiti attualmente attivi 
+
+Vorrei estrarre tutti I prestiti di un determinato cliente     /prestiti/{ClienteId}  
+
+oppure ci posso arrivare dal padre? /clienti... 
+
+Vorrei estrarre tutti I prestiti di un determinato libro	/prestiti/{LibroId} 
+
+Vorrei estrarre tutti i prestiti in una finestra di tempo 
+
+Vorrei estrarre il cliente o I clienti che hanno il maggior numero di prestiti 
+
+Vorrei estrarre il libro I libri che hanno il maggior numero di prestiti 
+
+Vorrei ottenere il o I libri più prestati e il o I libri meno prestati in un’unica risposta 
+
+Vorrei estrarre i prestiti attualmente attivi 
+
+Vorrei estrarre il genere letterario più noleggiato 
+
+ 
+
+Legenda colori Giovanni: 
+
+Verde     Interessanti 
+
+Fucsia      Specifica? 
+
+ 
+
+LIBRI: 
+
+PostLibro 
+
+GetAllBooks 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+???????????????????????????????????????????????????????????????????????????????? 
+
+ 
+
+getbookdelcliente (per vedere tutti i libri relativi ad un cliente) 
+
+getprestitobydate (per vedere se il prestito è ancora in atto) 
+
+putenddate (per aggiornare i dati del prestito qualora il libro fosse stato restituito tramite enddate)  
+
+ 
+
+vedere tutti i libri non in prestito 
+
+vedere quante volte è stato prestato un libro 
+
+ 
+ 
+
+- vorrei prendere attraverso la classe prestiti i libri che non sono prestati 
+
+- vorrei prendere attraverso il nome del libro il periodo del prestito e da chi 
+
+-vorrei attraverso la classe libro fare l’inserimento di un nuovo libro 
+
+-vorrei cambiare il prestito di un libro ad un cliente 

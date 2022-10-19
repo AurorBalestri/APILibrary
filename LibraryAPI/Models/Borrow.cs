@@ -2,10 +2,15 @@
 {
     public class Borrow
     {
-        private DateTime _startDate { get; set; }
-        private DateTime _endDate { get; set; }
-        private int _customerId { get; set; }
-        private int _bookId { get; set; }
+        private DateTime _startDate;
+        private DateTime _endDate;
+        private int _customerId;
+        private int _bookId;
+
+        public DateTime StartDate { get { return _startDate; } set { _startDate = value; } }
+        public DateTime EndDate { get { return _endDate; } set { _endDate = value; } }
+        public int CustomerId { get { return _customerId; } set { _customerId = value; } }
+        public int BookId { get { return _bookId; } set { _bookId = value; } }
 
         public Borrow()
         {

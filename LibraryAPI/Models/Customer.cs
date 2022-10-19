@@ -2,10 +2,16 @@
 {
     public class Customer
     {
-        private int _customerId { get; set; }
-        private string _fullName { get; set; }
-        private string _address { get; set; }
-        private int _phoneNumber { get; set; }
+        public static int autoIncrementId = 1;
+        private int _customerId;
+        private string _fullName;
+        private string _address;
+        private int _phoneNumber;
+
+        public int CustomerId { get { return _customerId; } set { _customerId = autoIncrementId++; } }
+        public string FullName { get { return _fullName; } set { _fullName = value; } }
+        public string Address { get { return _address; } set { _address = value; } }
+        public int PhoneNumber { get { return _phoneNumber; } set { _phoneNumber = value; } }
 
         public Customer()
         {
